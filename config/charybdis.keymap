@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -63,9 +62,9 @@
 
         layer_2 {
             bindings = <
-&none        &none  &none  &kp F7  &kp F8  &kp F9    &kp F10         &kp F11         &kp F12          &none  &none  &bl BL_TOG
-&none        &none  &none  &kp F4  &kp F5  &kp F6    &none           &msc SCRL_UP    &none            &none  &none  &rgb_ug RGB_TOG
-&bootloader  &none  &none  &kp F1  &kp F2  &kp F3    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none  &none  &bootloader
+&none        &none  &none  &kp F7  &kp F8  &kp F9    &kp F10         &kp F11         &kp F12          &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG
+&none        &none  &none  &kp F4  &kp F5  &kp F6    &none           &msc SCRL_UP    &none            &none            &none            &rgb_ug RGB_COLOR_HSB(0,0,100)
+&bootloader  &none  &none  &kp F1  &kp F2  &kp F3    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none            &none            &bootloader
                            &none   &none   &none     &none           &kp SPACE       &kp ENTER
             >;
         };
