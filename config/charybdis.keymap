@@ -53,18 +53,18 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &none         &none     &none     &kp MINUS  &kp EQUAL    &kp N7  &kp N8    &kp N9  &kp N0  &kp BACKSLASH  &rgb_ug RGB_TOG
-&trans     &none         &trans    &trans    &kp UP     &none        &kp N4  &kp N5    &kp N6  &trans  &kp LBKT       &kp RBKT
-&trans     &kp LEFT_GUI  &kp LALT  &kp LEFT  &kp DOWN   &kp RIGHT    &kp N1  &kp N2    &kp N3  &trans  &kp LEFT_GUI   &bt BT_CLR_ALL
-                                   &kp TAB   &mkp MB5   &mo 2        &mo 2   &mkp MB4  &trans
+&kp GRAVE  &none         &none     &none    &kp MINUS  &kp EQUAL    &kp N7  &kp N8    &kp N9  &kp N0    &kp BACKSLASH  &bt BT_CLR_ALL
+&trans     &kp L         &trans    &trans   &kp MINUS  &kp EQUAL    &kp N4  &kp N5    &kp N6  &kp LBKT  &kp UP         &kp RBKT
+&trans     &kp LEFT_GUI  &kp LALT  &none    &kp MINUS  &kp EQUAL    &kp N1  &kp N2    &kp N3  &kp LEFT  &kp DOWN       &kp RIGHT
+                                   &kp TAB  &mkp MB5   &mo 2        &mo 2   &mkp MB4  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&none        &none  &none  &none           &none           &none              &kp F7  &kp F8  &kp F9  &kp F12  &none  &rgb_ug RGB_COLOR_HSB(0,0,100)
-&none        &none  &none  &none           &msc SCRL_UP    &none              &kp F4  &kp F5  &kp F6  &kp F11  &none  &none
-&bootloader  &none  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp F1  &kp F2  &kp F3  &kp F10  &none  &bootloader
+&none        &none  &none  &none           &none           &none              &kp F7  &kp F8  &kp F9  &kp F12  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG
+&none        &none  &none  &none           &msc SCRL_UP    &none              &kp F4  &kp F5  &kp F6  &kp F11  &none                           &none
+&bootloader  &none  &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp F1  &kp F2  &kp F3  &kp F10  &none                           &bootloader
                            &trans          &trans          &trans             &trans  &trans  &trans
             >;
         };
